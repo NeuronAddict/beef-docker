@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  beef:
+    build:
+      context: beef
+    volumes:
+      - ./beef/config.yaml:/opt/beef-master/config.yaml
+    ports:
+    - 127.0.0.1:3000:3000
+    - 127.0.0.1:61985:61985
+    - 127.0.0.1:61986:61986
+    tty: true
