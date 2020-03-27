@@ -1,8 +1,11 @@
-# beef docker
+# beef-xss docker container
 
-## BEEF-XSS docker container
+## BeEF docker container
 
-Run the container :
+Docker container for the project beef-xss : https://beefproject.com/.
+
+
+## Run the container :
 
 ```
 git clone https://github.com/NeuronAddict/beef-docker.git
@@ -23,3 +26,5 @@ ports:
     - 61985:61985
     - 61986:61986
 ```
+
+IF you change port in docker-compose, chage it un config.yaml
