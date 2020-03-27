@@ -5,7 +5,7 @@
 Run the container :
 
 ```
-git clone https://github.org/NeuronAddict/beef-docker.git
+git clone https://github.com/NeuronAddict/beef-docker.git
 cd beef-docker
 docker-compose up
 # enjoy
