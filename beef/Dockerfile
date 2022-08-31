@@ -1,4 +1,4 @@
-FROM debian AS builder
+FROM ruby:2.7 AS builder
 
 ENV TERM=xterm
 ENV LANG=en_US.UTF-8
@@ -13,8 +13,6 @@ RUN curl -sL https://github.com/beefproject/beef/archive/master.tar.gz | tar -xz
 
 WORKDIR /opt/beef-master
 
-RUN echo -e "\n\n\n" | /opt/beef-master/install
-
-WORKDIR /opt/beef-master
+RUN yes | /opt/beef-master/install
 
 CMD ["./beef"]
